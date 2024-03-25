@@ -11,15 +11,9 @@ class Enemy extends Sprite {
     this.acceleration = {
       y: 0,
     };
-    this.maxSpeed = 1;
+    this.maxSpeed = score / 90;
     this.width = 20;
     this.height = 60;
-  }
-
-  increaseMaxSpeedOverTime() {
-    if (score % 100 === 0) {
-      this.maxSpeed = score / 50;
-    }
   }
 
   acellerate() {

@@ -28,7 +28,6 @@ const checkPlayerCollision = function (player, enemy) {
 
 const generateEnemies = function (enemies) {
   enemies.forEach((enemy) => {
-    enemy.increaseMaxSpeedOverTime();
     enemy.draw();
     enemy.move();
     checkPlayerCollision(player, enemy);
