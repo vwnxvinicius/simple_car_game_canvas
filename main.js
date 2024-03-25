@@ -10,7 +10,7 @@ const keys = {
 let score = 0;
 
 canvas.width = 500;
-canvas.height = innerHeight;
+canvas.height = window.innerHeight;
 
 const roadBackground = new Sprite({
   position: {
